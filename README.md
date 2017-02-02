@@ -1,8 +1,8 @@
 # My website
 
-This version was a dynamic website, multilingual, written
-with PHP, living at argo3.altervista.org.
+This version of the site added the blog made with Wordpress. Accidentally I deleted it, so I lost everything that was stored in the database (in particular some images).
 
+A dynamic website, multilingual, written with PHP.
 In contrast with the previous version, it used extensively heredoc
 strings containing the
  two versions (English and Italian) of the parts of the site.

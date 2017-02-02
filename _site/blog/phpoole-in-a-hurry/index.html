@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf8" />
+    <title>Argoweb - Phpoole in a hurry</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/font.css">
+    <link rel="stylesheet" type="text/css" href="/css/siimple.min.css">
+</head>
+<body>
+<div id="main" class="grid grid-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1><a href="">Argoweb</a></h1>
+            <h3>Sofware libero, bricolage, pensieri</h3>
+            <div>blog/phpoole-in-a-hurry</div>
+            <div><h1>Phpoole in a hurry</h1>
+<p><a href="http://phpoole.org">Phpoole</a> is a static site generator, written in PHP, by Arnaud Ligny.</p>
+<p>This text is based on the official documentation for Phpoole and Twig. It is not meant to replace them, just to give you a guide for beginners like me.</p>
+<p>An additional benefit is that Twig and YAML are used in many other static generators written in PHP.</p>
+<p>I assume you have access to a bash shell and know what $PATH is.</p>
+<p>The emphasized text is for terms that have a particular meaning in Phpoole parlance (easier than you think!).</p>
+<p>Install Phpoole. You just need to download it in a directory that is in your $PATH. For example.</p>
+<pre><code>cd ~/bin
+wget http://phpoole.org/phpoole.phar
+mv phpoole.phar phpoole
+chmod +x phpoole</code></pre>
+<p>Now you can execute Phpoole just entering <code>phpoole</code> at a shell.</p>
+<p>Create a directory (say <code>$proj</code>) to hold your new web project.</p>
+<p>Create a new site with</p>
+<pre><code>cd $proj
+phpoole new</code></pre>
+<p>The source of the site is made of:</p>
+<table><thead><tr><th>file type?</th>
+    <th>what for?</th>
+    <th>where in the directory hierarchy?</th>
+    </tr></thead><tbody><tr><td rowspan="3">Markdown documents (markup language)</td>
+      <td rowspan="3">content</td>
+      <td rowspan="1">each markdown document is called a <em>Page</em>; <em>Pages</em> are in <code>$proj/content</code> </td>
+    </tr><tr><td>Directory</td>
+      <td>define a <em>Section</em> of the site (for example a section can be Blog, another MyProjects)</td>
+      <td>in <code>$proj/content</code>
+</td>
+    </tr><tr><td>in particular you write your content in the <em>body</em> of each <em>Page</em> using Markdown language</td>
+    </tr><tr><td>they can be organized into directories that become the <em>Sections</em> ; </td></tr><tr><td rowspan="2">YAML (<a href="#serialization">serialization format</a>)</td>
+      <td rowspan="2">define variables</td>
+      <td rowspan="1">site-wide variables are in <code>$proj/phpoole.yml</code>
+</td>
+    </tr><tr><td rowspan="1">page-wide variables can be defined in each <em>Page</em>, in a zone called <em>front matter</em> (it is at the beginning of the file; a line with three dashes begings the <em>front-matter</em>; another line with only three dashes ends it)</td>
+    </tr><tr><td rowspan="4">
+<a href="http://twig.sensiolabs.org/">Twig</a> templates</td>
+      <td rowspan="4">layout; basically it is HTML, but instead of content there are variables to be replaced as needed</td>
+      <td rowspan="1">for the <em>homepage node type</em> () <code>$proj/layouts/index.html.twig</code>
+</td>
+    </tr><tr><td>for the <em>page node type</em> () <code>$proj/layouts/default/page.html.twig</code>
+</td>
+    </tr><tr><td>for the <em>list node type</em> (a <em>Section</em>) <code>$proj/layouts/default/list.html.twig</code>
+</td>
+    </tr><tr><td><code>$proj/layouts/default/page.html.twig</code></td>
+    </tr><tr><td rowspan="1">CSS</td>
+      <td rowspan="1">make it look good</td>
+      <td rowspan="1">put your CSS in the <code>$proj/static</code> directory.</td>
+    </tr></tbody></table>
+<p>Add your stuff.</p>
+<p>Build the site with <code>phpoole build</code>. The static site is created, by default, into <code>$proj/_site</code>. You can then copy the contendt of this directory to you production server.</p>
+<aside><dl><!--Description List--><dt>
+<!--Description Term aka the term to be defined-->lexer</dt>
+  <dd>
+<!--Description Definition aka the explanation-->
+  lexical analyzer, a computer program that performs lexical analysis
+  </dd>
+  <dt>parser</dt>
+<dd>a computer program that parses.</dd>
+  <dt>to parse</dt>
+  <dd>to split an input (e.g. a file) <!--from latin exempli gratia--> into pieces of data that can be easily manipulated.</dd>
+  <dt><a id="serialization">Serialization format</a></dt>
+  <dd>
+   a computer language designed to store  data structures (wich are typical of programming languages) on disk. A widely-used format is <abbr title="JavaScript Object Notation">JSON</abbr>; another one, <a href="www.yaml.org/spec/1.2/spec.html"><abbr title="YAML Ain’t Markup Language">YAML</abbr></a>, is even more readable; also <abbr title="eXtensible Markup Language">XML</abbr> has been used for this purpose.</dd>
+</dl><aside>Wiktionary and Wikipedia was used extensively during the writing of this document.</aside></aside></div>
+            <div id="footer"><a href="http://phpoole.org/#v1.1.x-dev">PHPoole-library v1.1.x-dev</a></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

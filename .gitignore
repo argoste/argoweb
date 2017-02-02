@@ -1,0 +1,2 @@
+pelican_site/output/*
+pelican_site/__pycache__

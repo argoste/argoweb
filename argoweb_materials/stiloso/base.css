@@ -1,0 +1,79 @@
+@charset "UTF-8";
+body 	{ font-size: 100%; } /*For many browser it is 16px*/
+h1 		{ font-size: 200%; } /**/
+h2 		{ font-size: 160%; }
+h3 		{ font-size: 140%; }
+h4 		{ font-size: 110%; }
+/*
+body
+	{
+	background: #BFF8BF;
+	}
+*/
+
+/*INLINE ELEMENTS------------------------------*/
+/*a	{	text-decoration: none;}*/
+/*code {	}*/
+
+/* FIGURE, TABLE, BLOCKQUOTE----------------------*/
+td {border: solid 1px black; padding: .2em .2em; }
+
+
+/* PARTS----------------------------------------*/
+/*header{	}
+footer{	}
+article	{	}*/
+
+
+/* NAVIGATION-----------------------------------*/
+nav
+	{
+	border-style: solid;
+	border-width: 1px;
+	border-color: gainsboro;
+	}
+
+nav li
+	{
+	list-style-type: none; /* no mark for elements*/
+	display: inline; /* a block element is diplayed as an inline element i.e. no newline*/
+	border: solid 1px lightgrey;
+	/*margin: top right bottom left;*/
+	margin: 0px 0px 0px 0px;
+	/*background:white;*/
+	}
+	
+nav li a {	text-decoration: none;}
+	
+nav li a.active
+	{
+	color: green;
+	background: black;
+	}
+	
+/*
+body#homepage a#homepage,
+body#who a#who,
+body#essays a#essays,
+body#projects a#projects
+body#credits a#credits
+	{
+	color: white;
+	background: darkgrey;
+	}
+*/
+/* The previous code will highlight the current position in the main nav bar.
+*  Of course you have to add a different id to the <body> of each main part of the site, this way
+*  <body id="homepage">
+*  Also you have do add and id to each anchor <a> of the nav itself, this way
+*	 <a href="index.html" id="homepage"> 
+*/
+
+div.choose-lang li
+	{
+	display: inline;
+	list-style-type: none;
+	margin: 6px;
+	}
+
+

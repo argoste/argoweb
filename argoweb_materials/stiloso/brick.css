@@ -1,0 +1,72 @@
+
+body {
+  /*padding:1em;*/
+  background: #EFEEE6;
+  color: #000000;
+}
+a:link {
+  color: #FF0000;
+  text-decoration: none;
+  /*border: thin solid #25639E;*/
+}
+a:visited {
+  color: #A52A2A;
+/*  border: thin solid #347453;*/
+ }
+figure{
+  margin-top: 4em;
+  border-top: dashed medium #4D4D4D;
+}
+img {
+  width: inherit;
+}
+embed {
+  width: inherit;
+}*/
+.logo {
+  width: 8%;
+}
+.screenshot {
+  border: medium double black;
+}
+/* The header related stuff*/
+header{
+  position: static;
+  left: 0em;
+  top: 0em;
+  height: 7.5em;
+  border: thin solid black;
+  margin: 0em;
+}
+header li{
+  display: inline;
+  list-style-type: none;
+  border: solid thin cyan;
+  padding: 0.1em;
+  margin: 0.3em;
+}
+.argoste-logo {
+  position: relative;
+  left: 0em;
+  top: 0em;
+  border: thin dashed red;
+}
+.choose-lang {
+  position: relative;
+  left: 7em;
+  top: -7em;
+  border: thin dashed green;
+}
+nav {
+  position: relative;
+  left: 7em;
+  top: -6em;
+  border: thin dashed orange;
+}
+/*end of header stuff*/
+
+}
+div.license {
+  margin-top: 2em;
+}
+

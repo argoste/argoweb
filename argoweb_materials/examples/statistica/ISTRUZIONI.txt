@@ -1,0 +1,20 @@
+SEMPLICI STATISTICHE DESCRITTIVE SU UN CAMPIONE DI DATI NUMERICI
+    statistica-0.11
+Un programma di Stefano Carlesso.
+
+Per usarlo bisogna farlo partire dal terminale di GNU/Linux.
+ - I dati di imput vanno scritti su un file di testo,
+ - una x per ogni riga,
+ - niente caratteri alfabetici, solo numeri reali,
+ - i decimali sono separati dal punto.
+Sono inclusi due set di dati, pronti da usare.
+  anni.txt
+  misure2.txt
+
+ NOTE: 
+sono supportati numeri solo fino ad una certa cifra;
+sono supportati set di dati da 1 a 999 elementi.
+
+
+This software is freely available under GNU GPL v2.
+Updated 5/oct/2011
